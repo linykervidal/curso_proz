@@ -27,5 +27,28 @@
     <footer>
         <span>Línyker Vidal - 2022</span>
     </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDpV4Dz95vmrrYUiHsg7FuTs0ISMyAIuU4",
+            authDomain: "linykervidal-d6e5d.firebaseapp.com",
+            projectId: "linykervidal-d6e5d",
+            storageBucket: "linykervidal-d6e5d.appspot.com",
+            messagingSenderId: "674845777691",
+            appId: "1:674845777691:web:8072dccc311ac6c656fdbe",
+            measurementId: "G-NV5YN2L5K2"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </body>
 </html>
