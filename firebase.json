@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "linykervidal-d6e5d",
     "public": "public",
     "ignore": [
       "firebase.json",
