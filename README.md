@@ -6,5 +6,6 @@ Aqui fica o conteúdo que tenho feito através do curso.
 * CSS
 * JAVASCRIPT
 
-## Link do meu portfólio:
+## Links do meu portfólio:
+* https://linykervidal-3b43d.web.app/
 * https://linykervidal.up.railway.app/
