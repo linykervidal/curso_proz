@@ -93,7 +93,7 @@ h4 {
     font-size: 1.17em;
 }
 
-p {
+section p {
     text-indent: 30px;
     text-align: justify;
 }
@@ -131,10 +131,6 @@ footer ul {
     display: flex;
     flex-direction: column;
     gap: 3px;
-}
-
-footer p {
-    text-indent: 0;
 }
 
 #credits {
