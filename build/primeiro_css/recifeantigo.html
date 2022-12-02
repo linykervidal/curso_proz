@@ -4,171 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Recife Antigo</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        header {
-            display: flex;
-            justify-content: center;
-            background-color: green;
-            color: yellow;
-            margin: -8px;
-        }
-
-        #menu-top{
-            display: none;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        #menu-list-top {
-            display: flex;
-            justify-content: space-evenly;
-            background-color: yellow;
-            margin: 8px -8px 0px;
-            font-size: 1.5em;
-            padding: 15px;
-        }
-
-        #menu-list-top a:visited {
-            color: blue;
-        }
-
-        a {
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: red;
-        }
-
-        h3 {
-            font-size: 1.3em;
-        }
-
-        p {
-            text-indent: 30px;
-            text-align: justify;
-        }
-
-        h4 {
-            font-size: 1.17em;
-        }
-
-        section {
-            display: flex;
-            align-items: center;
-        }
-
-        figure {
-            border: 2px black solid;
-        }
-
-        figcaption {
-            text-indent: 10px;
-            padding: 5px;
-        }
-
-        #footer {
-            background-color: yellow;
-            color: green;
-            display: flex;
-            justify-content: space-around;
-            margin: 8px -8px;
-        }
-
-        #footer a:visited {
-            color: blue;
-        }
-
-        #footer a:hover {
-            color: blue;
-        }
-
-        footer p {
-            text-indent: 0;
-        }
-
-        h2 {
-            font-size: 1.3em;
-        }
-
-        #credits {
-            background-color: green;
-            color: yellow;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0px 10px;
-            margin: -8px;
-        }
-
-        #credits a {
-            color: white;
-        }
-
-        footer div ul {
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-        }
-    </style>
 </head>
 <body>
     <header id="top">
         <h1>Pontos turísticos de Recife Antigo</h1>
+        <nav>
+            <h2 id="menu-top">Menu</h2>
+            <ul id="menu-list-top">
+                <li><a href="#malakoff">Torre Malakoff</a></li>
+                <li><a href="#sinagoga">Sinagoga Kahal Zur Israel</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <h2 id="menu-top">Menu</h2>
-        <ul id="menu-list-top">
-            <li><a href="#malakoff">Torre Malakoff</a></li>
-            <li><a href="#sinagoga">Sinagoga Kahal Zur Israel</a></li>
-        </ul>
-    </nav>
 
     <main>
         <section id="malakoff">
-            <div>
-                <h3>Torre Malakoff</h3>
-                <p>A <strong>Torre Malakoff</strong>, foi batizada com o nome de uma das torres da fortaleza de <a href="https://pt.wikipedia.org/wiki/Sebastopol" target="_blank">Sebastopol</a>, durante a <a href="https://pt.wikipedia.org/wiki/Guerra_da_Crim%C3%A9ia" target="_blank">Guerra da Criméia</a> (1853-1856).</p>
-                <h4>História</h4>
-                <p>Um decreto provincial de 1 de janeiro de 1834 criava o Arsenal da marinha, tendo o projeto arquitetônico sido feito em 1837. Em 1853 foi iniciada a construção do então chamado <strong>Portão Monumental</strong> do arsenal da Marinha, na proximidade do Porto do Recife.</p>
-                <p>Na época da sua construção, havia muita notícia veiculada pelo <a href="https://pt.wikipedia.org/wiki/Diario_de_Pernambuco" target="_blank">Diario de Pernambuco</a> a respeito da <em>Guerra da Criméia</em>, com destaque para o foco de resistência em defesa da colina e da torre fortificada de <a href="https://pt.wikipedia.org/wiki/Malakoff" target="_blank">Malakoff</a>, o que gerou grande interesse no Recife e em todo o Estado de Pernambuco. Segundo o médico e historiador <em>Pedro Veloso Costa</em>, em seu livro "A Marinha em Pernambuco" (Fundarpe, 1987), o batismo da torre com o nome <em>Malakoff</em> foi dado pela própria população, que na época acompanhava a longínqua batalha pelo jornal.</p>
-                <p>Quando os arsenais da Marinha foram extintos com o início da República, a Torre foi transferida para o patrimônio do Porto, sendo depois abandonada e ameaçada de extinção. A população, sob a liderança de instituições literárias e culturais do Recife, a exemplo do Instituto Arqueológico, Histórico e Geográfico de Pernambuco (IAHGP) e o jornal Diário de Pernambuco, mobilizou-se contra a demolição, utilizando como exemplo a própria resistência de Malakoff na Guerra da Criméia, sendo então, utilizada como centro de irradiação da Cultura na cidade</p>
-                <p>Ali funcionou, por algum tempo, um observatório astronômico que depois foi usado para estudos baseados na ciência.</p> 
-                <a href="#top">Voltar para o topo &uarr;</a>
+            <h3 class="sect-title">Torre Malakoff</h3>
+            <div class="text">
+                <div>
+                    <p>A <strong>Torre Malakoff</strong>, foi batizada com o nome de uma das torres da fortaleza de <a href="https://pt.wikipedia.org/wiki/Sebastopol" target="_blank">Sebastopol</a>, durante a <a href="https://pt.wikipedia.org/wiki/Guerra_da_Crim%C3%A9ia" target="_blank">Guerra da Criméia</a> (1853-1856).</p>
+                    <h4>História</h4>
+                    <p>Um decreto provincial de 1 de janeiro de 1834 criava o Arsenal da marinha, tendo o projeto arquitetônico sido feito em 1837. Em 1853 foi iniciada a construção do então chamado <strong>Portão Monumental</strong> do arsenal da Marinha, na proximidade do Porto do Recife.</p>
+                    <p>Na época da sua construção, havia muita notícia veiculada pelo <a href="https://pt.wikipedia.org/wiki/Diario_de_Pernambuco" target="_blank">Diario de Pernambuco</a> a respeito da <em>Guerra da Criméia</em>, com destaque para o foco de resistência em defesa da colina e da torre fortificada de <a href="https://pt.wikipedia.org/wiki/Malakoff" target="_blank">Malakoff</a>, o que gerou grande interesse no Recife e em todo o Estado de Pernambuco. Segundo o médico e historiador <em>Pedro Veloso Costa</em>, em seu livro "A Marinha em Pernambuco" (Fundarpe, 1987), o batismo da torre com o nome <em>Malakoff</em> foi dado pela própria população, que na época acompanhava a longínqua batalha pelo jornal.</p>
+                    <p>Quando os arsenais da Marinha foram extintos com o início da República, a Torre foi transferida para o patrimônio do Porto, sendo depois abandonada e ameaçada de extinção. A população, sob a liderança de instituições literárias e culturais do Recife, a exemplo do Instituto Arqueológico, Histórico e Geográfico de Pernambuco (IAHGP) e o jornal Diário de Pernambuco, mobilizou-se contra a demolição, utilizando como exemplo a própria resistência de Malakoff na Guerra da Criméia, sendo então, utilizada como centro de irradiação da Cultura na cidade</p>
+                    <p>Ali funcionou, por algum tempo, um observatório astronômico que depois foi usado para estudos baseados na ciência.</p>
+                    <a href="#top">Voltar para o topo &uarr;</a>
+                </div>
+                <figure>
+                    <img src="img/Torre_malakoff.jpg" alt="Torre Malakoff">
+                    <figcaption>Torre Malakoff</figcaption>
+                </figure>
             </div>
-
-            <figure>
-                <img src="img/Torre_malakoff.jpg" alt="Torre Malakoff">
-                <figcaption>Torre Malakoff</figcaption>
-            </figure>
         </section>
 
         <section id="sinagoga">
-            <div>
-                <h3>Sinagoga Kahal Zur Israel</h3>
-                <p>A <strong>Sinagoga Kahal Zur Israel</strong> foi a primeira <a href="https://pt.wikipedia.org/wiki/Sinagoga" target="_blank">sinagoga</a> das <a href="https://pt.wikipedia.org/wiki/Am%C3%A9rica" target="_blank">Américas</a>. Suas instalações compreendem hoje o <strong>Arquivo Histórico Judaico de Pernambuco</strong>.</p>
-                <h4>Histórico</h4>
-                <p>A Kahal Zur Israel (Congregação Rochedo de Israel) foi a primeira sinagoga das Américas. Funcionou em Pernambuco durante o período de <a href="https://pt.wikipedia.org/wiki/Invas%C3%B5es_holandesas_do_Brasil" target="_blank">dominação holandesa</a> (1630 a 1657).</p>
-                <p>Durante esse período emigraram para o Recife milhares de judeus <a href="https://pt.wikipedia.org/wiki/Sefarditas" target="_blank">sefarditas</a> de origem portuguesa, refugiados nos <a href="https://pt.wikipedia.org/wiki/Pa%C3%ADses_Baixos" target="_blank">Países Baixos</a>, que vieram para a então colônia holandesa atraídos pela liberdade de culto religioso. Seu primeiro <a href="https://pt.wikipedia.org/wiki/Rabino" target="_blank">rabino</a> foi o luso-holandês <a href="https://pt.wikipedia.org/wiki/Isaac_Aboab_da_Fonseca" target="_blank">Isaac Aboab da Fonseca</a> (1605-1693) que chegou ao Recife em 1641 e ficou por lá durante 13 anos. Derrotados na <a href="https://pt.wikipedia.org/wiki/Batalha_dos_Guararapes" target="_blank">Batalha dos Guararapes</a>, fruto da <a href="https://pt.wikipedia.org/wiki/Insurrei%C3%A7%C3%A3o_Pernambucana" target="_blank">Insurreição Pernambucana</a>, as famílias judias retornaram para a Holanda a bordo do navio <em>Valk</em>. O desembarque ocorreu em Nova Amsterdã, atual <a href="https://pt.wikipedia.org/wiki/Nova_York" target="_blank">Nova York</a>, onde os judeus formaram a <a href="https://pt.wikipedia.org/wiki/Congrega%C3%A7%C3%A3o_Shearith_Israel" target="_blank">Congregação Shearith Israel</a>, a primeira comunidade judaica da América do Norte.</p>
-                <p>O material arqueológico datado do século XVII, foi recentemente identificado pelo <a href="https://pt.wikipedia.org/wiki/Iphan" target="_blank">Iphan</a> e pela <a href="https://pt.wikipedia.org/wiki/Universidade_Federal_de_Pernambuco" target="_blank">Universidade Federal de Pernambuco</a> (UFPE). Como comprovação da existência e funcionamento da Congregação, foi identificada a construção de uma piscina com sete degraus - um "mikvê" - utilizada em rituais de banho de purificação. A fachada do prédio data do século XIX e, atualmente, abriga o Arquivo Histórico Judaico de Pernambuco.</p>
-                <p>Os primeiros judeus chegados à cidade <a href="https://pt.wikipedia.org/wiki/Norte-americana" target="_blank">norte-americana</a> de <em>Nova Iorque</em>, fundadores da primeira sinagoga local, eram refugiados do Recife e membros da sinagoga Kahal Zur Israel.</p>
-                <a href="#top">Voltar para o topo &uarr;</a>
+            <h3 class="sect-title">Sinagoga Kahal Zur Israel</h3>
+            <div class="text">
+                <div>
+                    <p>A <strong>Sinagoga Kahal Zur Israel</strong> foi a primeira <a href="https://pt.wikipedia.org/wiki/Sinagoga" target="_blank">sinagoga</a> das <a href="https://pt.wikipedia.org/wiki/Am%C3%A9rica" target="_blank">Américas</a>. Suas instalações compreendem hoje o <strong>Arquivo Histórico Judaico de Pernambuco</strong>.</p>
+                    <h4>Histórico</h4>
+                    <p>A Kahal Zur Israel (Congregação Rochedo de Israel) foi a primeira sinagoga das Américas. Funcionou em Pernambuco durante o período de <a href="https://pt.wikipedia.org/wiki/Invas%C3%B5es_holandesas_do_Brasil" target="_blank">dominação holandesa</a> (1630 a 1657).</p>
+                    <p>Durante esse período emigraram para o Recife milhares de judeus <a href="https://pt.wikipedia.org/wiki/Sefarditas" target="_blank">sefarditas</a> de origem portuguesa, refugiados nos <a href="https://pt.wikipedia.org/wiki/Pa%C3%ADses_Baixos" target="_blank">Países Baixos</a>, que vieram para a então colônia holandesa atraídos pela liberdade de culto religioso. Seu primeiro <a href="https://pt.wikipedia.org/wiki/Rabino" target="_blank">rabino</a> foi o luso-holandês <a href="https://pt.wikipedia.org/wiki/Isaac_Aboab_da_Fonseca" target="_blank">Isaac Aboab da Fonseca</a> (1605-1693) que chegou ao Recife em 1641 e ficou por lá durante 13 anos. Derrotados na <a href="https://pt.wikipedia.org/wiki/Batalha_dos_Guararapes" target="_blank">Batalha dos Guararapes</a>, fruto da <a href="https://pt.wikipedia.org/wiki/Insurrei%C3%A7%C3%A3o_Pernambucana" target="_blank">Insurreição Pernambucana</a>, as famílias judias retornaram para a Holanda a bordo do navio <em>Valk</em>. O desembarque ocorreu em Nova Amsterdã, atual <a href="https://pt.wikipedia.org/wiki/Nova_York" target="_blank">Nova York</a>, onde os judeus formaram a <a href="https://pt.wikipedia.org/wiki/Congrega%C3%A7%C3%A3o_Shearith_Israel" target="_blank">Congregação Shearith Israel</a>, a primeira comunidade judaica da América do Norte.</p>
+                    <p>O material arqueológico datado do século XVII, foi recentemente identificado pelo <a href="https://pt.wikipedia.org/wiki/Iphan" target="_blank">Iphan</a> e pela <a href="https://pt.wikipedia.org/wiki/Universidade_Federal_de_Pernambuco" target="_blank">Universidade Federal de Pernambuco</a> (UFPE). Como comprovação da existência e funcionamento da Congregação, foi identificada a construção de uma piscina com sete degraus - um "mikvê" - utilizada em rituais de banho de purificação. A fachada do prédio data do século XIX e, atualmente, abriga o Arquivo Histórico Judaico de Pernambuco.</p>
+                    <p>Os primeiros judeus chegados à cidade <a href="https://pt.wikipedia.org/wiki/Norte-americana" target="_blank">norte-americana</a> de <em>Nova Iorque</em>, fundadores da primeira sinagoga local, eram refugiados do Recife e membros da sinagoga Kahal Zur Israel.</p>
+                    <a href="#top">Voltar para o topo &uarr;</a>
+                </div>
+                <figure>
+                    <img src="img/Sinagoga_Kahal_Zur_Israel,_Recife,_Pernambuco,_Brasil.jpg" alt="Sinagoga Kahal Zur Israel">
+                    <figcaption>Sinagoga Kahal Zur Israel</figcaption>
+                </figure>
             </div>
-
-            <figure>
-                <img src="img/Sinagoga_Kahal_Zur_Israel,_Recife,_Pernambuco,_Brasil.jpg" alt="Sinagoga Kahal Zur Israel">
-                <figcaption>Sinagoga Kahal Zur Israel</figcaption>
-            </figure>
         </section>
     </main>
 
